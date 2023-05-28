@@ -1,0 +1,9 @@
+<h1>Hours#new</h1>
+<p>Find me in app/views/hours/new.html.erb</p>
+
+<%= form_for (@hour) do |f| %>
+    <%= f.number_field :mon_hour %>
+    <%= f.date_field :date %>
+    <%= f.text_area :memo %>
+    <%= f.submit %>
+<%end%>

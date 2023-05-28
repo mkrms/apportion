@@ -1,0 +1,14 @@
+<h1>Hours#index</h1>
+<p>Find me in app/views/hours/index.html.erb</p>
+
+<div class = 'container'>
+    <div id="calendar">
+    </div>
+    <%= link_to  "New Schedule", new_hour_path %>
+</div>
+
+<% @hours.each do |hour| %>
+    <%= hour.mon_hour %>
+    <%= hour.date %>
+    <%= hour.memo %>
+<%end%>
